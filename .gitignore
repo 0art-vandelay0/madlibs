@@ -1,0 +1,7 @@
+bin
+obj
+.vscode
+global.json
+FriendLetter.sln
+launchSettings.json
+```
