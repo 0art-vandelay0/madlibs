@@ -10,11 +10,11 @@ namespace Madlibs.Controllers
 
         // [Route("/form")]
         // [Route("/")]
-        [Route("/basicForm")]
-        public ActionResult Form() { return View(); }
+        [Route("/cultForm")]
+        public ActionResult CultForm() { return View(); }
 
-        [Route("/finalMadlib")]
-        public ActionResult FinalMadlib(string[] noun, string[] verb, string[] adjective, string[] adverb)
+        [Route("/cultMadlib")]
+        public ActionResult CultMadlib(string[] noun, string[] verb, string[] adjective, string[] adverb)
         {
             MadlibVariable myMadlibVariable = new MadlibVariable();
             myMadlibVariable.Nouns = noun;
