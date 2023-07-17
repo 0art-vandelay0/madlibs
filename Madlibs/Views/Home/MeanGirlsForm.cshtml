@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mean Girls Madlibs</title>
+        <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+        <meta charset='utf-8'>
+    </head>
+    <body>
+        <h1 id="open-h1">Fill out each entry with the appropriate type of Verb, Noun, or Adjective.</h1>
+        <form action="/meanGirlsMadlib" method="post">
+            <label for="noun">Noun</label><br>
+            <input type="text" name="noun[]" id="noun"><br>
+            <input type="text" name="noun[]" id="noun"><br>
+            <br>
+            <label for="noun">Proper Noun (person)</label><br>
+            <input type="text" name="noun[]" id="noun"><br>
+            <br>
+            <label for="adjective">Adjectives: </label><br>
+            <input type="text" name="adjective[]" id="adjective"><br>
+            <input type="text" name="adjective[]" id="adjective"><br>
+            <br>
+            <label for="verb">Verbs</label><br>
+            <input type="text" name="verb[]" id="verb"><br>
+            <input type="text" name="verb[]" id="verb"><br>
+            <br>
+            <label for="adverb">Adverbs</label><br>
+            <input type="text" name="adverb[]" id="adverb"><br>
+            <input type="text" name="adverb[]" id="adverb"><br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

@@ -6,16 +6,52 @@ namespace Madlibs.Controllers
     public class HomeController : Controller
     {
         [Route("/")]
+        public ActionResult Index() { return View(); }
+
+        // [Route("/form")]
+        // [Route("/")]
+        [Route("/basicForm")]
         public ActionResult Form() { return View(); }
 
         [Route("/finalMadlib")]
-        public ActionResult FinalMadlib(string noun, string verb, string adjective, string adverb)
+        public ActionResult FinalMadlib(string[] noun, string[] verb, string[] adjective, string[] adverb)
         {
             MadlibVariable myMadlibVariable = new MadlibVariable();
-            myMadlibVariable.Noun = noun;
-            myMadlibVariable.Verb = verb;
-            myMadlibVariable.Adjective = adjective;
-            myMadlibVariable.Adverb = adverb;
+            myMadlibVariable.Nouns = noun;
+            myMadlibVariable.Verbs = verb;
+            myMadlibVariable.Adjectives = adjective;
+            myMadlibVariable.Adverbs = adverb;
+
+            return View(myMadlibVariable);
+        }
+
+        [Route("/wizardForm")]
+        public ActionResult WizardForm() { return View(); }
+
+        [Route("/wizardMadlib")]
+        public ActionResult WizardMadlib(string[] noun, string[] verb, string[] adjective, string[] adverb)
+        {
+            MadlibVariable myMadlibVariable = new MadlibVariable();
+            myMadlibVariable.Nouns = noun;
+            myMadlibVariable.Verbs = verb;
+            myMadlibVariable.Adjectives = adjective;
+            myMadlibVariable.Adverbs = adverb;
+
+            return View(myMadlibVariable);
+        }
+
+        [Route("/meanGirlsForm")]
+        public ActionResult MeanGirlsForm() { return View(); }
+
+        [Route("/meanGirlsMadlib")]
+        public ActionResult MeanGirlsMadlib(string[] noun, string[] verb, string[] adjective, string[] adverb)
+        {
+            MadlibVariable myMadlibVariable = new MadlibVariable();
+            myMadlibVariable.Nouns = noun;
+            myMadlibVariable.Verbs = verb;
+            myMadlibVariable.Adjectives = adjective;
+            myMadlibVariable.Adverbs = adverb;
+
             return View(myMadlibVariable);
         }
     }
