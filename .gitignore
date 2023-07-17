@@ -2,6 +2,6 @@ bin
 obj
 .vscode
 global.json
-FriendLetter.sln
+Madlibs.sln
 launchSettings.json
 ```
